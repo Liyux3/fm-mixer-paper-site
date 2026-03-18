@@ -737,7 +737,7 @@ export default function CombinedVizReadable() {
 
   return (
     <div className="w-full text-slate-900">
-      <div className="mx-auto flex w-full max-w-6xl flex-col overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_25px_80px_rgba(15,23,42,0.12)]">
+      <div className="mx-auto flex w-full max-w-6xl flex-col overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_25px_80px_rgba(15,23,42,0.12)] md:min-h-[820px]">
         <div className="flex h-2 w-full bg-slate-100">
           {STEPS.map((item, idx) => (
             <div
@@ -751,7 +751,7 @@ export default function CombinedVizReadable() {
           ))}
         </div>
 
-        <div className="flex flex-1 flex-col md:flex-row">
+        <div className="flex flex-1 flex-col items-stretch md:flex-row">
           <div className="w-full border-b border-slate-200 bg-slate-50 p-8 md:w-[34%] md:border-b-0 md:border-r">
             <div className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
               <Icon className="h-6 w-6" style={{ color: stepMeta.accent }} />
@@ -799,7 +799,7 @@ export default function CombinedVizReadable() {
             </div>
           </div>
 
-          <div className="relative flex min-h-[520px] flex-1 items-center justify-center overflow-hidden bg-white p-6 md:p-8">
+          <div className="relative flex min-h-[560px] flex-1 items-center justify-center overflow-hidden bg-white p-6 md:min-h-[820px] md:p-8">
             <div
               className="pointer-events-none absolute inset-0 opacity-[0.03]"
               style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '24px 24px' }}
@@ -811,7 +811,7 @@ export default function CombinedVizReadable() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -24 }}
                 transition={{ duration: 0.3 }}
-                className="relative flex h-full w-full items-center justify-center"
+                className="relative flex h-full min-h-[520px] w-full items-center justify-center md:min-h-[700px]"
               >
                 {renderVisual()}
               </motion.div>

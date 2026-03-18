@@ -72,3 +72,10 @@ paper details are still in flight.
 The website now also reserves space for four selected journal figures, while
 denser supplementary tables and videos are expected to live on companion pages
 or linked resources later.
+
+The next pass pulled the site back toward a more neutral website template:
+
+- paper-specific strategic details were removed from the visible copy
+- top-of-page publication links now sit directly below the title
+- two media placeholders now live below the hero content
+- the interactive method card now uses a stable height to reduce page jumps

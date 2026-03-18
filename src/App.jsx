@@ -3,7 +3,7 @@ import CombinedVizReadable from './CombinedVizReadable.jsx'
 
 const navItems = [
   { label: 'Abstract', href: '#overview' },
-  { label: 'Scope', href: '#scope' },
+  { label: 'Framework', href: '#scope' },
   { label: 'Method', href: '#method' },
   { label: 'Results', href: '#results' },
   { label: 'Media', href: '#media' },
@@ -12,31 +12,31 @@ const navItems = [
 
 const scopePillars = [
   {
-    title: 'RRAM System',
-    text: 'The project is framed around an acceleration system, not only a policy network. The eventual paper will cover an RRAM-oriented inference stack for running compact action policies.',
+    title: 'System Layer',
+    text: 'Use this block to describe the broader system context for the project at a high level, without forcing the website to commit to final manuscript wording too early.',
   },
   {
-    title: 'Model Transfer',
-    text: 'A second pillar is distillation from larger VLA-style action models into a smaller design that is realistic for the target system and deployment constraints.',
+    title: 'Model Pipeline',
+    text: 'This slot can hold the model-side story, such as training flow, transfer steps, compression choices, or other framing that sits around the final policy architecture.',
   },
   {
-    title: 'Policy Evaluation',
-    text: 'The third pillar is policy design and evaluation, including simulation comparisons, physical demos, and system-level tradeoffs. Public wording stays intentionally broad for now.',
+    title: 'Evaluation Track',
+    text: 'Keep this section for simulation, hardware, qualitative demos, or any other experimental thread that eventually belongs in the paper narrative.',
   },
 ]
 
 const resultPlaceholders = [
   {
-    title: 'System-Level Comparison',
-    text: 'Reserve this for the headline comparison that ties the policy to the broader system story, including efficiency, latency, or deployment-side gains where appropriate.',
+    title: 'Main Comparison',
+    text: 'Reserve this block for the headline quantitative comparison that anchors the main empirical story of the paper.',
   },
   {
-    title: 'Model and Distillation Studies',
-    text: 'Use this block for design ablations, teacher-student comparisons, and compact-policy variants without oversharing unfinished internals too early.',
+    title: 'Ablation Studies',
+    text: 'Use this block for design ablations, architecture variants, or other controlled studies that clarify where the gains are coming from.',
   },
   {
-    title: 'Simulation and Physical Trials',
-    text: 'Place simulation comparisons, real-robot summaries, failure modes, and final task precision notes here.',
+    title: 'Evaluation Summary',
+    text: 'Place summaries of experimental settings, representative outcomes, failure modes, or cross-setting comparisons here.',
   },
 ]
 
@@ -113,28 +113,44 @@ export default function App() {
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.16, duration: 0.45 }}
-                className="mt-5 max-w-3xl text-lg leading-8 text-stone-600 md:text-xl"
+                transition={{ delay: 0.13, duration: 0.45 }}
+                className="mt-4 max-w-3xl text-sm leading-7 text-stone-500 md:text-base"
               >
-                A system-oriented project around action-space flow matching for bimanual control, spanning acceleration hardware, model transfer, and policy design.
+                Author names, affiliations, venue notes, and publication status can sit here once ready.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.22, duration: 0.45 }}
-                className="mt-6 text-sm leading-7 text-stone-500"
+                transition={{ delay: 0.16, duration: 0.45 }}
+                className="mt-5 flex flex-wrap gap-3"
               >
-                Authors, institutional lines, and publication venue can slot here once finalized.
+                <LinkChip href="#resources">Paper</LinkChip>
+                <LinkChip href="#resources">Code</LinkChip>
+                <LinkChip href="#resources">Tables</LinkChip>
+                <LinkChip href="#resources">Videos</LinkChip>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.22, duration: 0.45 }}
+                className="mt-6 max-w-3xl text-lg leading-8 text-stone-600 md:text-xl"
+              >
+                A neutral, animation-friendly project website template for a research paper, with room for method figures, journal images, tables, and linked supplementary media.
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.45 }}
-                className="mt-8 flex flex-wrap gap-3"
+                className="mt-8 grid gap-4 md:grid-cols-2"
               >
-                <LinkChip href="#method">Method Animation</LinkChip>
-                <LinkChip href="#results">Results</LinkChip>
-                <LinkChip href="#resources">Resources</LinkChip>
+                <div className="rounded-[24px] border border-dashed border-stone-300 bg-white/76 p-5 shadow-sm backdrop-blur-sm">
+                  <div className="text-sm font-semibold text-stone-900">Featured animation or teaser video</div>
+                  <div className="mt-4 h-48 rounded-2xl bg-stone-200" />
+                </div>
+                <div className="rounded-[24px] border border-dashed border-stone-300 bg-white/76 p-5 shadow-sm backdrop-blur-sm">
+                  <div className="text-sm font-semibold text-stone-900">Secondary media slot</div>
+                  <div className="mt-4 h-48 rounded-2xl bg-stone-200" />
+                </div>
               </motion.div>
             </div>
 
@@ -146,17 +162,17 @@ export default function App() {
             >
               <div className="text-xs font-semibold uppercase tracking-[0.22em] text-stone-500">Abstract</div>
               <p className="mt-4 text-base leading-8 text-stone-700">
-                This website is structured as a paper companion rather than a product page. It is meant to hold the public-facing outline of a broader system paper while keeping sensitive implementation details, final figures, and supplementary artifacts flexible until the manuscript settles.
+                This website is structured as a paper companion rather than a product page. It is meant to hold a public-facing project summary while keeping the detailed manuscript wording, final figures, and supplementary assets flexible until publication.
               </p>
               <div className="mt-6 grid gap-3">
                 <div className="rounded-2xl bg-stone-50 px-4 py-3 text-sm leading-7 text-stone-600">
-                  <span className="font-semibold text-stone-800">System scope.</span> The project spans hardware-aware deployment, compact model transfer, and policy behavior.
+                  <span className="font-semibold text-stone-800">Purpose.</span> Provide a clear landing place for the title, abstract, method visualizations, and publication links.
                 </div>
                 <div className="rounded-2xl bg-stone-50 px-4 py-3 text-sm leading-7 text-stone-600">
-                  <span className="font-semibold text-stone-800">Method focus.</span> The current public animation emphasizes the policy backbone and its structured flow-matching design.
+                  <span className="font-semibold text-stone-800">Method focus.</span> The current interactive module acts like an animated method figure inside the eventual paper website.
                 </div>
                 <div className="rounded-2xl bg-stone-50 px-4 py-3 text-sm leading-7 text-stone-600">
-                  <span className="font-semibold text-stone-800">Status.</span> The site is live, quietly framed, and ready to absorb journal figures, tables, and linked supplementary media later.
+                  <span className="font-semibold text-stone-800">Status.</span> The site is live, quietly framed, and ready to absorb figures, tables, and linked supplementary media later.
                 </div>
               </div>
             </motion.div>
@@ -168,7 +184,7 @@ export default function App() {
             <SectionHeader
               eyebrow="Overview"
               title="A calmer, paper-oriented shell for future figures and explanations"
-              body="The site is now shaped like an academic project page: title, abstract, scope framing, method section, figure placeholders, and a final resources block. The visual language stays restrained so the technical material can stay in front."
+              body="The site is now shaped like an academic project page: title, abstract, framework section, method section, figure placeholders, and a final resources block. The visual language stays restrained so the technical material can stay in front."
             />
             <div className="grid gap-4 md:grid-cols-2">
               <div className="rounded-[24px] border border-stone-200 bg-white p-5 shadow-sm">
@@ -186,7 +202,7 @@ export default function App() {
               <div className="rounded-[24px] border border-stone-200 bg-white p-5 shadow-sm md:col-span-2">
                 <div className="text-sm font-semibold text-stone-900">Current structure</div>
                 <p className="mt-2 text-sm leading-7 text-stone-600">
-                  The method animation is already embedded, and the surrounding sections are stable placeholders for writing, system framing, journal figures, tables, rollout clips, citations, and publication links.
+                  The method animation is already embedded, and the surrounding sections are stable placeholders for writing, framework notes, journal figures, tables, rollout clips, citations, and publication links.
                 </p>
               </div>
             </div>
@@ -196,9 +212,9 @@ export default function App() {
         <section id="scope" className="border-b border-stone-200 bg-[#fbf9f4]">
           <div className="mx-auto w-full max-w-7xl px-4 py-16 md:px-6">
             <SectionHeader
-              eyebrow="Scope"
-              title="The paper is framed as a system story"
-              body="The public site should make the broader scope legible without prematurely exposing every implementation detail. These three blocks are intentionally high level and map to the current plan for the full paper."
+              eyebrow="Framework"
+              title="A neutral placeholder for the broader project structure"
+              body="Use these cards to frame the eventual paper at a high level. They are intentionally generic so the site can stay public and stable before the final manuscript language is ready."
             />
             <div className="mt-10 grid gap-4 lg:grid-cols-3">
               {scopePillars.map((item) => (
@@ -216,7 +232,7 @@ export default function App() {
             <SectionHeader
               eyebrow="Method"
               title="Interactive architecture walkthrough"
-              body="This module acts like an animated figure for the policy-design portion of the paper. It explains the raw action grid, projection into hidden features, observation and time conditioning, the three-axis mixer blocks, AdaLN-Zero modulation, and the final ODE rollout."
+              body="This module acts like an animated figure for the method section. It explains the raw action grid, projection into hidden features, observation and time conditioning, the three-axis mixer blocks, AdaLN-Zero modulation, and the final ODE rollout."
             />
             <div className="mt-10">
               <CombinedVizReadable />
