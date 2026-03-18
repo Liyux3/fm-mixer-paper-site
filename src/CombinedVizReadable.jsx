@@ -507,8 +507,8 @@ export default function CombinedVizReadable() {
                   <div
                     className="pointer-events-none absolute top-0 bottom-0 rounded-md border-2 border-emerald-500"
                     style={{
-                      left: MIX_ACTIVE_COLUMN * (MIX_CELL_SIZE + MIX_GAP),
-                      width: MIX_CELL_SIZE,
+                      left: MIX_ACTIVE_COLUMN * (MIX_CELL_SIZE + MIX_GAP) - 1,
+                      width: MIX_CELL_SIZE + 2,
                     }}
                   />
                 ) : null}
@@ -516,8 +516,8 @@ export default function CombinedVizReadable() {
                   <div
                     className="pointer-events-none absolute left-0 right-0 rounded-md border-2 border-blue-500"
                     style={{
-                      top: MIX_ACTIVE_ROW * (MIX_CELL_SIZE + MIX_GAP),
-                      height: MIX_CELL_SIZE,
+                      top: MIX_ACTIVE_ROW * (MIX_CELL_SIZE + MIX_GAP) - 1,
+                      height: MIX_CELL_SIZE + 2,
                     }}
                   />
                 ) : null}

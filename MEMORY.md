@@ -58,3 +58,17 @@ and more like an academic paper companion:
 
 The step-6 mixer diagram was also corrected further so the time-mix highlight
 snaps to the intended joint column more precisely.
+
+The public framing was then widened from policy-only language toward the
+broader system paper:
+
+- RRAM system context is now acknowledged at a high level
+- model distillation from larger action models is called out as a second pillar
+- simulation and physical evaluation are framed as the third pillar
+
+This framing remains intentionally broad because the implementation and final
+paper details are still in flight.
+
+The website now also reserves space for four selected journal figures, while
+denser supplementary tables and videos are expected to live on companion pages
+or linked resources later.

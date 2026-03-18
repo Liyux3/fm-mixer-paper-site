@@ -1,6 +1,13 @@
 # FM-Mixer Paper Site
 
-Starter website for the `3-Axis MLP-Mixer Flow Matching Policy` project.
+Starter website for the broader `3-Axis MLP-Mixer Flow Matching Policy` paper companion.
+
+The public framing is intentionally broader than the policy animation alone. The
+site is meant to support a system-level paper spanning:
+
+- an RRAM-oriented execution system
+- model distillation from larger action models
+- policy design plus simulation and physical evaluation
 
 ## Stack
 
@@ -38,9 +45,14 @@ The site is configured for GitHub Pages through GitHub Actions.
 
 ## Current content structure
 
-- hero and overview sections
+- title and abstract framing
+- scope section for the three system pillars
 - embedded interactive method walkthrough
-- placeholder sections for results, media, and resources
+- placeholder sections for results, figures/media, and resources
+
+The figures/media section currently assumes four selected journal figures on the
+main site, while denser supplementary tables and videos may live on linked
+companion pages later.
 
 ## Main files
 
