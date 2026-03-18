@@ -84,6 +84,10 @@ const STEPS = [
 
 const JOINT_COLORS = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#14b8a6', '#6366f1', '#a855f7']
 const JOINT_NAMES = ['L.Shoulder', 'L.Elbow', 'L.Wrist', 'R.Shoulder', 'R.Elbow', 'R.Wrist', 'Gripper']
+const MIX_CELL_SIZE = 32
+const MIX_GAP = 4
+const MIX_ACTIVE_COLUMN = 5
+const MIX_ACTIVE_ROW = 3
 
 function Arrow({ vertical = false, color = '#94a3b8', size = 36 }) {
   return (
@@ -176,16 +180,18 @@ export default function CombinedVizReadable() {
   const mixCols = 11
 
   const mixCellStyle = (r, c) => {
-    const activeColumn = 5
-    const activeRow = 3
     const pulse =
       mixAxis === 0
-        ? c === activeColumn && tick % mixRows === r
+        ? c === MIX_ACTIVE_COLUMN && tick % mixRows === r
         : mixAxis === 1
-          ? r === activeRow && tick % mixCols === c
-          : r === activeRow && c === activeColumn
+          ? r === MIX_ACTIVE_ROW && tick % mixCols === c
+          : r === MIX_ACTIVE_ROW && c === MIX_ACTIVE_COLUMN
     const selected =
-      mixAxis === 0 ? c === activeColumn : mixAxis === 1 ? r === activeRow : r === activeRow && c === activeColumn
+      mixAxis === 0
+        ? c === MIX_ACTIVE_COLUMN
+        : mixAxis === 1
+          ? r === MIX_ACTIVE_ROW
+          : r === MIX_ACTIVE_ROW && c === MIX_ACTIVE_COLUMN
 
     if (pulse) {
       return { background: ['#10b981', '#3b82f6', '#a855f7'][mixAxis], borderColor: 'transparent', transform: 'scale(1.06)' }
@@ -498,10 +504,22 @@ export default function CombinedVizReadable() {
                   )
                 })}
                 {mixAxis === 0 ? (
-                  <div className="pointer-events-none absolute top-0 bottom-0 rounded-md border-2 border-emerald-500" style={{ left: '10.8rem', width: '2rem' }} />
+                  <div
+                    className="pointer-events-none absolute top-0 bottom-0 rounded-md border-2 border-emerald-500"
+                    style={{
+                      left: MIX_ACTIVE_COLUMN * (MIX_CELL_SIZE + MIX_GAP),
+                      width: MIX_CELL_SIZE,
+                    }}
+                  />
                 ) : null}
                 {mixAxis === 1 ? (
-                  <div className="pointer-events-none absolute left-0 right-0 rounded-md border-2 border-blue-500" style={{ top: '6.75rem', height: '2rem' }} />
+                  <div
+                    className="pointer-events-none absolute left-0 right-0 rounded-md border-2 border-blue-500"
+                    style={{
+                      top: MIX_ACTIVE_ROW * (MIX_CELL_SIZE + MIX_GAP),
+                      height: MIX_CELL_SIZE,
+                    }}
+                  />
                 ) : null}
               </div>
             </div>

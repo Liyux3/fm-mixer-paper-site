@@ -47,3 +47,14 @@ The site now includes:
 
 GitHub Pages deployment was wired through GitHub Actions and published from a
 new public repository at `Liyux3/fm-mixer-paper-site`.
+
+Later the site shell was revised again to feel less like a startup landing page
+and more like an academic paper companion:
+
+- quieter stone-toned palette
+- serif-forward headings
+- abstract-style hero content
+- placeholder sections written more like paper sections than marketing cards
+
+The step-6 mixer diagram was also corrected further so the time-mix highlight
+snaps to the intended joint column more precisely.
