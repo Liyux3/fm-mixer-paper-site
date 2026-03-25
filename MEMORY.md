@@ -79,3 +79,14 @@ The next pass pulled the site back toward a more neutral website template:
 - top-of-page publication links now sit directly below the title
 - two media placeholders now live below the hero content
 - the interactive method card now uses a stable height to reduce page jumps
+
+The method visualization itself was then refactored away from the older
+fragmented step-by-step slide logic:
+
+- the current component is now an integrated architecture explorer
+- the whole pipeline stays visible in an overview map
+- the lower panel acts as a detail lens into whichever node is selected
+- the mixer stack now keeps overview and per-axis detail in the same module
+
+A backup of the pre-refactor visualization was kept at
+`src/CombinedVizReadable_pre_mixer_refactor.jsx`.

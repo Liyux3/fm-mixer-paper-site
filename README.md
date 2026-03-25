@@ -44,7 +44,7 @@ The site is configured for GitHub Pages through GitHub Actions.
 
 - title and abstract framing
 - generic framework section
-- embedded interactive method walkthrough
+- embedded interactive method explorer
 - placeholder sections for results, figures/media, and resources
 
 The figures/media section currently assumes four selected journal figures on the
@@ -53,6 +53,15 @@ companion pages later.
 
 The hero area also includes direct publication-link placeholders and top media
 slots for teaser animations or videos.
+
+The method module is now structured as:
+
+- an overview map of the full pipeline
+- a fixed-height detail area
+- an integrated mixer explorer with overview and per-axis inspection in one place
+
+A preserved copy of the older visualization remains in
+`src/CombinedVizReadable_pre_mixer_refactor.jsx`.
 
 ## Main files
 
