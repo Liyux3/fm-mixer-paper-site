@@ -1,0 +1,677 @@
+{
+  "minimal_path": "/Users/liyux/Desktop/EmbodiedAI/_archive/workstation_design/printable_school_print_v4_minimal",
+  "zip_path": "/Users/liyux/Desktop/EmbodiedAI/_archive/workstation_design/printable_school_print_v4_minimal.zip",
+  "stl_count": 22,
+  "expected_file_count": 25,
+  "actual_file_count": 25,
+  "all_stl_watertight": true,
+  "all_stls_match_release": true,
+  "largest_stl_mb": 4.167,
+  "largest_part_extent_mm": 250.0,
+  "problem_count": 0,
+  "problems": [],
+  "release_copy_checks": [
+    {
+      "file": "01_tiles/A_bottom_left_H_base.stl",
+      "source": "01_tiles/A_bottom_left_H/A_bottom_left_H_base.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/A_bottom_left_H_floor_color.stl",
+      "source": "01_tiles/A_bottom_left_H/A_bottom_left_H_floor_color.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/A_bottom_left_H_platform_gray.stl",
+      "source": "01_tiles/A_bottom_left_H/A_bottom_left_H_platform_gray.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/B_bottom_mid_K_base.stl",
+      "source": "01_tiles/B_bottom_mid_K/B_bottom_mid_K_base.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/B_bottom_mid_K_floor_color.stl",
+      "source": "01_tiles/B_bottom_mid_K/B_bottom_mid_K_floor_color.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/B_bottom_mid_K_platform_gray.stl",
+      "source": "01_tiles/B_bottom_mid_K/B_bottom_mid_K_platform_gray.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/C_bottom_right_U_base.stl",
+      "source": "01_tiles/C_bottom_right_U/C_bottom_right_U_base.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/C_bottom_right_U_floor_color.stl",
+      "source": "01_tiles/C_bottom_right_U/C_bottom_right_U_floor_color.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/C_bottom_right_U_platform_gray.stl",
+      "source": "01_tiles/C_bottom_right_U/C_bottom_right_U_platform_gray.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/D_top_left_incoming_base.stl",
+      "source": "01_tiles/D_top_left_incoming/D_top_left_incoming_base.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/D_top_left_incoming_platform_gray.stl",
+      "source": "01_tiles/D_top_left_incoming/D_top_left_incoming_platform_gray.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/E_top_right_incoming_base.stl",
+      "source": "01_tiles/E_top_right_incoming/E_top_right_incoming_base.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "01_tiles/E_top_right_incoming_platform_gray.stl",
+      "source": "01_tiles/E_top_right_incoming/E_top_right_incoming_platform_gray.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "02_letters/letter_H.stl",
+      "source": "02_letters/letter_H.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "02_letters/letter_K.stl",
+      "source": "02_letters/letter_K.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "02_letters/letter_U.stl",
+      "source": "02_letters/letter_U.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "03_backing_plates/backing_plate_bottom_left_mid.stl",
+      "source": "03_backing_plates/backing_plate_bottom_left_mid.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "03_backing_plates/backing_plate_bottom_mid_right.stl",
+      "source": "03_backing_plates/backing_plate_bottom_mid_right.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "03_backing_plates/backing_plate_left_vertical.stl",
+      "source": "03_backing_plates/backing_plate_left_vertical.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "03_backing_plates/backing_plate_mid_vertical.stl",
+      "source": "03_backing_plates/backing_plate_mid_vertical.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "03_backing_plates/backing_plate_right_vertical.stl",
+      "source": "03_backing_plates/backing_plate_right_vertical.stl",
+      "sha256_matches_release": true
+    },
+    {
+      "file": "03_backing_plates/backing_plate_top_left_right.stl",
+      "source": "03_backing_plates/backing_plate_top_left_right.stl",
+      "sha256_matches_release": true
+    }
+  ],
+  "mesh_checks": [
+    {
+      "file": "01_tiles/A_bottom_left_H_base.stl",
+      "file_size_mb": 1.724,
+      "faces": 36156,
+      "vertices": 18078,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          150.0,
+          150.0,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        150.0,
+        150.0,
+        8.0
+      ],
+      "volume_mm3": 130697.077
+    },
+    {
+      "file": "01_tiles/A_bottom_left_H_floor_color.stl",
+      "file_size_mb": 0.01,
+      "faces": 208,
+      "vertices": 104,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          35.607,
+          23.35,
+          2.0
+        ],
+        [
+          119.955,
+          126.85,
+          3.0
+        ]
+      ],
+      "extents_mm": [
+        84.348,
+        103.5,
+        1.0
+      ],
+      "volume_mm3": 3484.78
+    },
+    {
+      "file": "01_tiles/A_bottom_left_H_platform_gray.stl",
+      "file_size_mb": 0.039,
+      "faces": 824,
+      "vertices": 414,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          23.134,
+          2.768,
+          3.0
+        ],
+        [
+          112.955,
+          119.85,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        89.821,
+        117.082,
+        5.0
+      ],
+      "volume_mm3": 2913.506
+    },
+    {
+      "file": "01_tiles/B_bottom_mid_K_base.stl",
+      "file_size_mb": 2.324,
+      "faces": 48726,
+      "vertices": 24364,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          150.0,
+          0.0,
+          0.0
+        ],
+        [
+          300.0,
+          150.0,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        150.0,
+        150.0,
+        8.0
+      ],
+      "volume_mm3": 137049.873
+    },
+    {
+      "file": "01_tiles/B_bottom_mid_K_floor_color.stl",
+      "file_size_mb": 0.012,
+      "faces": 240,
+      "vertices": 120,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          182.22,
+          23.35,
+          2.0
+        ],
+        [
+          268.454,
+          126.85,
+          3.0
+        ]
+      ],
+      "extents_mm": [
+        86.234,
+        103.5,
+        1.0
+      ],
+      "volume_mm3": 3486.459
+    },
+    {
+      "file": "01_tiles/B_bottom_mid_K_platform_gray.stl",
+      "file_size_mb": 0.026,
+      "faces": 544,
+      "vertices": 276,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          189.22,
+          12.331,
+          3.0
+        ],
+        [
+          258.524,
+          119.85,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        69.304,
+        107.519,
+        5.0
+      ],
+      "volume_mm3": 1576.543
+    },
+    {
+      "file": "01_tiles/C_bottom_right_U_base.stl",
+      "file_size_mb": 2.667,
+      "faces": 55932,
+      "vertices": 27967,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          300.0,
+          0.0,
+          0.0
+        ],
+        [
+          450.0,
+          150.0,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        150.0,
+        150.0,
+        8.0
+      ],
+      "volume_mm3": 138390.769
+    },
+    {
+      "file": "01_tiles/C_bottom_right_U_floor_color.stl",
+      "file_size_mb": 0.152,
+      "faces": 3176,
+      "vertices": 1588,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          330.493,
+          22.099,
+          2.0
+        ],
+        [
+          413.945,
+          128.1,
+          3.0
+        ]
+      ],
+      "extents_mm": [
+        83.452,
+        106.001,
+        1.0
+      ],
+      "volume_mm3": 3311.243
+    },
+    {
+      "file": "01_tiles/C_bottom_right_U_platform_gray.stl",
+      "file_size_mb": 0.146,
+      "faces": 3052,
+      "vertices": 1528,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          337.493,
+          3.194,
+          3.0
+        ],
+        [
+          420.0,
+          121.1,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        82.507,
+        117.906,
+        5.0
+      ],
+      "volume_mm3": 1579.405
+    },
+    {
+      "file": "01_tiles/D_top_left_incoming_base.stl",
+      "file_size_mb": 2.711,
+      "faces": 56846,
+      "vertices": 28425,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          0.0,
+          150.0,
+          0.0
+        ],
+        [
+          225.0,
+          400.0,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        225.0,
+        250.0,
+        8.0
+      ],
+      "volume_mm3": 423324.388
+    },
+    {
+      "file": "01_tiles/D_top_left_incoming_platform_gray.stl",
+      "file_size_mb": 0.119,
+      "faces": 2496,
+      "vertices": 1252,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          18.5,
+          156.5,
+          5.0
+        ],
+        [
+          225.0,
+          391.82,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        206.5,
+        235.32,
+        3.0
+      ],
+      "volume_mm3": 194.997
+    },
+    {
+      "file": "01_tiles/E_top_right_incoming_base.stl",
+      "file_size_mb": 2.676,
+      "faces": 56124,
+      "vertices": 28064,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          225.0,
+          150.0,
+          0.0
+        ],
+        [
+          450.0,
+          400.0,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        225.0,
+        250.0,
+        8.0
+      ],
+      "volume_mm3": 423321.408
+    },
+    {
+      "file": "01_tiles/E_top_right_incoming_platform_gray.stl",
+      "file_size_mb": 0.116,
+      "faces": 2432,
+      "vertices": 1216,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          225.0,
+          156.5,
+          5.0
+        ],
+        [
+          431.5,
+          391.82,
+          8.0
+        ]
+      ],
+      "extents_mm": [
+        206.5,
+        235.32,
+        3.0
+      ],
+      "volume_mm3": 200.569
+    },
+    {
+      "file": "02_letters/letter_H.stl",
+      "file_size_mb": 3.876,
+      "faces": 81292,
+      "vertices": 40648,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          -38.402,
+          -44.069,
+          -0.0
+        ],
+        [
+          37.946,
+          51.431,
+          40.0
+        ]
+      ],
+      "extents_mm": [
+        76.348,
+        95.5,
+        40.0
+      ],
+      "volume_mm3": 171139.561
+    },
+    {
+      "file": "02_letters/letter_K.stl",
+      "file_size_mb": 3.957,
+      "faces": 82992,
+      "vertices": 41498,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          -34.26,
+          -35.951,
+          0.0
+        ],
+        [
+          43.3,
+          59.549,
+          40.0
+        ]
+      ],
+      "extents_mm": [
+        77.56,
+        95.5,
+        40.0
+      ],
+      "volume_mm3": 118920.679
+    },
+    {
+      "file": "02_letters/letter_U.stl",
+      "file_size_mb": 4.167,
+      "faces": 87392,
+      "vertices": 43698,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          -37.726,
+          -46.76,
+          -0.0
+        ],
+        [
+          37.726,
+          51.24,
+          40.0
+        ]
+      ],
+      "extents_mm": [
+        75.452,
+        98.0,
+        40.0
+      ],
+      "volume_mm3": 112843.62
+    },
+    {
+      "file": "03_backing_plates/backing_plate_bottom_left_mid.stl",
+      "file_size_mb": 0.001,
+      "faces": 12,
+      "vertices": 8,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          128.0,
+          20.0,
+          0.0
+        ],
+        [
+          172.0,
+          130.0,
+          2.0
+        ]
+      ],
+      "extents_mm": [
+        44.0,
+        110.0,
+        2.0
+      ],
+      "volume_mm3": 9680.0
+    },
+    {
+      "file": "03_backing_plates/backing_plate_bottom_mid_right.stl",
+      "file_size_mb": 0.001,
+      "faces": 12,
+      "vertices": 8,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          278.0,
+          20.0,
+          0.0
+        ],
+        [
+          322.0,
+          130.0,
+          2.0
+        ]
+      ],
+      "extents_mm": [
+        44.0,
+        110.0,
+        2.0
+      ],
+      "volume_mm3": 9680.0
+    },
+    {
+      "file": "03_backing_plates/backing_plate_left_vertical.stl",
+      "file_size_mb": 0.001,
+      "faces": 12,
+      "vertices": 8,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          28.0,
+          126.0,
+          0.0
+        ],
+        [
+          122.0,
+          174.0,
+          2.0
+        ]
+      ],
+      "extents_mm": [
+        94.0,
+        48.0,
+        2.0
+      ],
+      "volume_mm3": 9024.0
+    },
+    {
+      "file": "03_backing_plates/backing_plate_mid_vertical.stl",
+      "file_size_mb": 0.001,
+      "faces": 12,
+      "vertices": 8,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          178.0,
+          126.0,
+          0.0
+        ],
+        [
+          272.0,
+          174.0,
+          2.0
+        ]
+      ],
+      "extents_mm": [
+        94.0,
+        48.0,
+        2.0
+      ],
+      "volume_mm3": 9024.0
+    },
+    {
+      "file": "03_backing_plates/backing_plate_right_vertical.stl",
+      "file_size_mb": 0.001,
+      "faces": 12,
+      "vertices": 8,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          328.0,
+          126.0,
+          0.0
+        ],
+        [
+          422.0,
+          174.0,
+          2.0
+        ]
+      ],
+      "extents_mm": [
+        94.0,
+        48.0,
+        2.0
+      ],
+      "volume_mm3": 9024.0
+    },
+    {
+      "file": "03_backing_plates/backing_plate_top_left_right.stl",
+      "file_size_mb": 0.001,
+      "faces": 12,
+      "vertices": 8,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          203.0,
+          184.0,
+          0.0
+        ],
+        [
+          247.0,
+          370.0,
+          2.0
+        ]
+      ],
+      "extents_mm": [
+        44.0,
+        186.0,
+        2.0
+      ],
+      "volume_mm3": 16368.0
+    }
+  ]
+}
